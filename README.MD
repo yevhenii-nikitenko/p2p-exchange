@@ -1,22 +1,22 @@
-### Simplified P2P distributed exchange
+# Simplified P2P distributed exchange
 
-## start two grape servers
+### start two grape servers
 
-```
+```bash
 grape --dp 20001 --aph 30001 --bn '127.0.0.1:20002'
 grape --dp 20002 --aph 40001 --bn '127.0.0.1:20001'
 
 ```
 
-## run service:
+### run service:
 
-```
+```bash
 node server.js
 ```
 
-## run client(s)
+### run client(s)
 
-```
+```bash
 nodemon client.js sell 15 BTC
 ```
 
